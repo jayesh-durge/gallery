@@ -31,7 +31,7 @@ body #center{
     position: absolute;
     font-size: 2rem;
     z-index: 100;
-    color:rgba(255, 255, 255, 0.66);
+    color:white;
     top:50%;
     left: 50%;
 }
@@ -40,6 +40,7 @@ body #yearcounter{
     font-size: 2.5rem;
     z-index: 100;
     color:white;
+    text-transform: uppercase;
     letter-spacing: 2.5px;
     left: 50%;
     top:10%;
@@ -59,12 +60,12 @@ body .container {
     top:50%;
     left: 50%;
     font-size: 25rem;
-    color:rgba(0, 0, 0, 0.489);
+    color:gray;
     z-index: -1000;
     transform: translate(-50%,-50%);
     font-weight: lighter;
     font-family: 'Times New Roman', Times, serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: -10px;
 }
 body .container .imagestrip {
@@ -74,7 +75,7 @@ body .container .imagestrip {
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translate(-4.5%,-50%);
+    transform: translate(-11%,-50%);
     scroll-behavior: smooth;
 }
 body .container .imagestrip span{
@@ -86,14 +87,7 @@ body .container .imagestrip .memories{
     justify-content: space-evenly;
     gap: 4vmin;
 } 
-body .container .imagestrip .memories :nth-child(1){
-    transform: scale(1.2);
-    margin:5vmin;
-}
-.vertical{
-    object-fit:cover;
-    object-position: 40% center !important;
-}
+
 #image-2nd-2022{
     object-fit: contain;
     height: 15rem;
@@ -108,131 +102,9 @@ body .container .imagestrip span{
     background-size: 300%;
 }
 body .container .memories img{
-    width:43vmin ;
-    height: 56vmin;
+    width:50vmin ;
+    height: 70vmin;
     object-fit: cover;
-    object-position: 80% -50%;
+    object-position: 100% -50%;
     box-shadow: 0 0 25px black;
-}
-.mobileview{
-    display: none;
-}
-
-
- @media screen and (max-width:1000px) {
-    body{
-        overflow-y:scroll;
-        overflow-x: hidden !important;
-        width: 100vw !important;
-    }
-    #yearcounter{
-        display: none;
-    }
-    body #center{
-        display: none;
-    }
-    body header img{
-        width: 6rem;
-    }
-    .mobileview{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    body header{
-        font-size: 1.5rem;
-        height: 5rem !important;
-        padding:1rem;
-        position: fixed;
-        top:0;
-        left: 0;
-        z-index: 10000;
-    }
-    .mobileview .add{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 25rem;
-        position: relative;
-        margin:10rem 0rem;
-    } 
-    .mobileview .add .imagestrip{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .mobileview h2{
-        font-size: 6rem;
-        position: fixed;
-        top:50vh;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        padding:1rem;
-        text-transform: capitalize;
-    }
-    body .add .imagestrip .memories :nth-child(1){
-        transform: scale(1);
-        margin:0vmin;
-    }
-    body .add .memories img{
-        width: 90vmin;
-        height: 100vmin;
-        object-position: center;
-        object-fit: cover;
-        border-radius: 0.5rem;
-        display: none;
-    }
-    body .add .one,body .add .two{
-        position: absolute;
-        z-index: 100;
-        color:white;
-        font-weight: 100;
-        top:50%;
-        font-size: 2rem;
-        width:2rem;
-        height: 2rem;
-        border-radius: 50%;
-        border:2px solid white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #14141430;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.466);
-    }
-    body .add .one{
-        left:5%;
-    }
-    body .add .two{
-        right:5%;
-    }
-    body .add .imagestrip .year{
-        color:white;
-        font-size: 2.5rem;
-        margin-top: -5%;
-        margin-bottom: 5%;
-        letter-spacing: 2px;
-        font-family:'Times New Roman', Times, serif;
-    }
-    body .add .memories img.active{
-        display: flex;
-        animation-name: nextimage;
-        animation-duration: 500ms;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        animation-direction: alternate;
-    }
-    .container{
-        display: none !important;
-    }
-    @keyframes nextimage {
-        0%{
-            opacity: 0.5;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
 }
