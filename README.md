@@ -19,3 +19,8 @@ This project showcases a grid of beautiful images with a modern layout and smoot
 - HTML5  
 - CSS3  
 - JavaScript (Vanilla)
+
+## 📸 Screenshots
+
+### 🖥️ Desktop View:
+![Gallery Preview](./Screenshot%202025-06-30%20161753.png)
